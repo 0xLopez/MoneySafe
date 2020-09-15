@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A30A30142E9F02CD0F6E355E /* Pods_MoneyChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919258E00B4775EB8C578FF1 /* Pods_MoneyChallenge.framework */; };
+		DE082A15C2DED120BFBAD820 /* Pods_MoneyChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75383FB0CA28A64B6A3A45D /* Pods_MoneyChallengeTests.framework */; };
+		F3419B6E2510B1BA00B29515 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3419B6D2510B1BA00B29515 /* Loader.swift */; };
+		F3419B702510BE4200B29515 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3419B6F2510BE4200B29515 /* Authenticator.swift */; };
+		F3419B722510C41300B29515 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3419B712510C41300B29515 /* UserData.swift */; };
+		F3419B742510C49F00B29515 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3419B732510C49F00B29515 /* Utils.swift */; };
+		F3419B762510C6E000B29515 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3419B752510C6E000B29515 /* ProductsTableViewController.swift */; };
+		F3419B782510C7B700B29515 /* ProductsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3419B772510C7B700B29515 /* ProductsClient.swift */; };
+		F3419B7A2510D3E800B29515 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3419B792510D3E800B29515 /* ProductTableViewCell.swift */; };
+		F3419B7C2510E57D00B29515 /* FakeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3419B7B2510E57D00B29515 /* FakeEndpoint.swift */; };
+		F3419B7F2510E7F900B29515 /* ProductsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3419B7E2510E7F900B29515 /* ProductsInfo.swift */; };
+		F3D90CD2250FC19F003FB654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D90CD1250FC19F003FB654 /* AppDelegate.swift */; };
+		F3D90CD6250FC19F003FB654 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D90CD5250FC19F003FB654 /* LoginViewController.swift */; };
+		F3D90CD9250FC19F003FB654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D90CD7250FC19F003FB654 /* Main.storyboard */; };
+		F3D90CDB250FC1A3003FB654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D90CDA250FC1A3003FB654 /* Assets.xcassets */; };
+		F3D90CDE250FC1A3003FB654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D90CDC250FC1A3003FB654 /* LaunchScreen.storyboard */; };
+		F3D90CE9250FC1A3003FB654 /* MoneyChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D90CE8250FC1A3003FB654 /* MoneyChallengeTests.swift */; };
+		F3D90CF5250FCFA2003FB654 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D90CF4250FCFA2003FB654 /* UIView+Extensions.swift */; };
+		F3D90CF7250FCFB8003FB654 /* UIColor+NamedColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D90CF6250FCFB8003FB654 /* UIColor+NamedColors.swift */; };
+		F3D90CFA250FD077003FB654 /* URLEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D90CF9250FD077003FB654 /* URLEndpoint.swift */; };
+		F3D90CFE250FD189003FB654 /* MoneyEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D90CFD250FD189003FB654 /* MoneyEndpoint.swift */; };
+		F3D90D00250FD90B003FB654 /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D90CFF250FD90B003FB654 /* UserCredentials.swift */; };
+		F3D90D02250FD925003FB654 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D90D01250FD925003FB654 /* HTTPHeader.swift */; };
+		F3D90D04250FD976003FB654 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D90D03250FD976003FB654 /* HTTPMethod.swift */; };
+		F3D90D06250FDB16003FB654 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D90D05250FDB16003FB654 /* NetworkClient.swift */; };
+		F3D90D082510AE60003FB654 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D90D072510AE60003FB654 /* APIError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3D90CE5250FC1A3003FB654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3D90CC6250FC19F003FB654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3D90CCD250FC19F003FB654;
+			remoteInfo = MoneyChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AFE6D9B33E0BCE261D04F2D /* Pods-MoneyChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MoneyChallenge/Pods-MoneyChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		6C5986E179BA5ECB6BC192FC /* Pods-MoneyChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-MoneyChallengeTests/Pods-MoneyChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		919258E00B4775EB8C578FF1 /* Pods_MoneyChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E75383FB0CA28A64B6A3A45D /* Pods_MoneyChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3419B6D2510B1BA00B29515 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		F3419B6F2510BE4200B29515 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		F3419B712510C41300B29515 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		F3419B732510C49F00B29515 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F3419B752510C6E000B29515 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
+		F3419B772510C7B700B29515 /* ProductsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsClient.swift; sourceTree = "<group>"; };
+		F3419B792510D3E800B29515 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		F3419B7B2510E57D00B29515 /* FakeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeEndpoint.swift; sourceTree = "<group>"; };
+		F3419B7E2510E7F900B29515 /* ProductsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsInfo.swift; sourceTree = "<group>"; };
+		F3C27611EC809B230CB607C7 /* Pods-MoneyChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyChallenge.release.xcconfig"; path = "Target Support Files/Pods-MoneyChallenge/Pods-MoneyChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		F3D4CB47B4E641D1CB3C91B2 /* Pods-MoneyChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-MoneyChallengeTests/Pods-MoneyChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		F3D90CCE250FC19F003FB654 /* MoneyChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D90CD1250FC19F003FB654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3D90CD5250FC19F003FB654 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F3D90CD8250FC19F003FB654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3D90CDA250FC1A3003FB654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3D90CDD250FC1A3003FB654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3D90CDF250FC1A3003FB654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D90CE4250FC1A3003FB654 /* MoneyChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D90CE8250FC1A3003FB654 /* MoneyChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyChallengeTests.swift; sourceTree = "<group>"; };
+		F3D90CEA250FC1A3003FB654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D90CF4250FCFA2003FB654 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		F3D90CF6250FCFB8003FB654 /* UIColor+NamedColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+NamedColors.swift"; sourceTree = "<group>"; };
+		F3D90CF9250FD077003FB654 /* URLEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndpoint.swift; sourceTree = "<group>"; };
+		F3D90CFD250FD189003FB654 /* MoneyEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyEndpoint.swift; sourceTree = "<group>"; };
+		F3D90CFF250FD90B003FB654 /* UserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentials.swift; sourceTree = "<group>"; };
+		F3D90D01250FD925003FB654 /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		F3D90D03250FD976003FB654 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		F3D90D05250FDB16003FB654 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		F3D90D072510AE60003FB654 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3D90CCB250FC19F003FB654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30A30142E9F02CD0F6E355E /* Pods_MoneyChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3D90CE1250FC1A3003FB654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE082A15C2DED120BFBAD820 /* Pods_MoneyChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B453694234BAFE7CE1711893 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				919258E00B4775EB8C578FF1 /* Pods_MoneyChallenge.framework */,
+				E75383FB0CA28A64B6A3A45D /* Pods_MoneyChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3419B6C2510B1A800B29515 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F3419B6F2510BE4200B29515 /* Authenticator.swift */,
+				F3419B6D2510B1BA00B29515 /* Loader.swift */,
+				F3419B772510C7B700B29515 /* ProductsClient.swift */,
+				F3419B732510C49F00B29515 /* Utils.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F3419B7D2510E7DE00B29515 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3D90CFF250FD90B003FB654 /* UserCredentials.swift */,
+				F3419B712510C41300B29515 /* UserData.swift */,
+				F3419B7E2510E7F900B29515 /* ProductsInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3419B802510E80F00B29515 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3D90CD5250FC19F003FB654 /* LoginViewController.swift */,
+				F3419B752510C6E000B29515 /* ProductsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F3419B812510E82100B29515 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3D90CD7250FC19F003FB654 /* Main.storyboard */,
+				F3419B792510D3E800B29515 /* ProductTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F3419B822510E83D00B29515 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3D90CDA250FC1A3003FB654 /* Assets.xcassets */,
+				F3D90CDC250FC1A3003FB654 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F3D90CC5250FC19F003FB654 = {
+			isa = PBXGroup;
+			children = (
+				F3D90CD0250FC19F003FB654 /* MoneyChallenge */,
+				F3D90CE7250FC1A3003FB654 /* MoneyChallengeTests */,
+				F3D90CCF250FC19F003FB654 /* Products */,
+				F63290A9AD50854D76B52C28 /* Pods */,
+				B453694234BAFE7CE1711893 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3D90CCF250FC19F003FB654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3D90CCE250FC19F003FB654 /* MoneyChallenge.app */,
+				F3D90CE4250FC1A3003FB654 /* MoneyChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3D90CD0250FC19F003FB654 /* MoneyChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				F3419B802510E80F00B29515 /* Controllers */,
+				F3D90CF3250FCF92003FB654 /* Extensions */,
+				F3419B6C2510B1A800B29515 /* Managers */,
+				F3419B7D2510E7DE00B29515 /* Models */,
+				F3D90CF8250FD02F003FB654 /* Networking */,
+				F3419B822510E83D00B29515 /* Resources */,
+				F3419B812510E82100B29515 /* Views */,
+				F3D90CD1250FC19F003FB654 /* AppDelegate.swift */,
+				F3D90CDF250FC1A3003FB654 /* Info.plist */,
+			);
+			path = MoneyChallenge;
+			sourceTree = "<group>";
+		};
+		F3D90CE7250FC1A3003FB654 /* MoneyChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3419B7B2510E57D00B29515 /* FakeEndpoint.swift */,
+				F3D90CE8250FC1A3003FB654 /* MoneyChallengeTests.swift */,
+				F3D90CEA250FC1A3003FB654 /* Info.plist */,
+			);
+			path = MoneyChallengeTests;
+			sourceTree = "<group>";
+		};
+		F3D90CF3250FCF92003FB654 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3D90CF4250FCFA2003FB654 /* UIView+Extensions.swift */,
+				F3D90CF6250FCFB8003FB654 /* UIColor+NamedColors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3D90CF8250FD02F003FB654 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F3D90D072510AE60003FB654 /* APIError.swift */,
+				F3D90D01250FD925003FB654 /* HTTPHeader.swift */,
+				F3D90D03250FD976003FB654 /* HTTPMethod.swift */,
+				F3D90CFD250FD189003FB654 /* MoneyEndpoint.swift */,
+				F3D90D05250FDB16003FB654 /* NetworkClient.swift */,
+				F3D90CF9250FD077003FB654 /* URLEndpoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F63290A9AD50854D76B52C28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AFE6D9B33E0BCE261D04F2D /* Pods-MoneyChallenge.debug.xcconfig */,
+				F3C27611EC809B230CB607C7 /* Pods-MoneyChallenge.release.xcconfig */,
+				6C5986E179BA5ECB6BC192FC /* Pods-MoneyChallengeTests.debug.xcconfig */,
+				F3D4CB47B4E641D1CB3C91B2 /* Pods-MoneyChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3D90CCD250FC19F003FB654 /* MoneyChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3D90CED250FC1A3003FB654 /* Build configuration list for PBXNativeTarget "MoneyChallenge" */;
+			buildPhases = (
+				E5DF329AAB241798EF9D27FE /* [CP] Check Pods Manifest.lock */,
+				F3D90CCA250FC19F003FB654 /* Sources */,
+				F3D90CCB250FC19F003FB654 /* Frameworks */,
+				F3D90CCC250FC19F003FB654 /* Resources */,
+				80FA7ACFAC8AD7B459D1AD4C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyChallenge;
+			productName = MoneyChallenge;
+			productReference = F3D90CCE250FC19F003FB654 /* MoneyChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3D90CE3250FC1A3003FB654 /* MoneyChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3D90CF0250FC1A3003FB654 /* Build configuration list for PBXNativeTarget "MoneyChallengeTests" */;
+			buildPhases = (
+				093C1193DA8E56A67339271F /* [CP] Check Pods Manifest.lock */,
+				F3D90CE0250FC1A3003FB654 /* Sources */,
+				F3D90CE1250FC1A3003FB654 /* Frameworks */,
+				F3D90CE2250FC1A3003FB654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3D90CE6250FC1A3003FB654 /* PBXTargetDependency */,
+			);
+			name = MoneyChallengeTests;
+			productName = MoneyChallengeTests;
+			productReference = F3D90CE4250FC1A3003FB654 /* MoneyChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3D90CC6250FC19F003FB654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Juan López";
+				TargetAttributes = {
+					F3D90CCD250FC19F003FB654 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					F3D90CE3250FC1A3003FB654 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = F3D90CCD250FC19F003FB654;
+					};
+				};
+			};
+			buildConfigurationList = F3D90CC9250FC19F003FB654 /* Build configuration list for PBXProject "MoneyChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3D90CC5250FC19F003FB654;
+			productRefGroup = F3D90CCF250FC19F003FB654 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3D90CCD250FC19F003FB654 /* MoneyChallenge */,
+				F3D90CE3250FC1A3003FB654 /* MoneyChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3D90CCC250FC19F003FB654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D90CDE250FC1A3003FB654 /* LaunchScreen.storyboard in Resources */,
+				F3D90CDB250FC1A3003FB654 /* Assets.xcassets in Resources */,
+				F3D90CD9250FC19F003FB654 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3D90CE2250FC1A3003FB654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		093C1193DA8E56A67339271F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80FA7ACFAC8AD7B459D1AD4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoneyChallenge/Pods-MoneyChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoneyChallenge/Pods-MoneyChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoneyChallenge/Pods-MoneyChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5DF329AAB241798EF9D27FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3D90CCA250FC19F003FB654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D90CF5250FCFA2003FB654 /* UIView+Extensions.swift in Sources */,
+				F3D90D06250FDB16003FB654 /* NetworkClient.swift in Sources */,
+				F3419B722510C41300B29515 /* UserData.swift in Sources */,
+				F3419B6E2510B1BA00B29515 /* Loader.swift in Sources */,
+				F3D90CFE250FD189003FB654 /* MoneyEndpoint.swift in Sources */,
+				F3419B762510C6E000B29515 /* ProductsTableViewController.swift in Sources */,
+				F3419B742510C49F00B29515 /* Utils.swift in Sources */,
+				F3D90CD6250FC19F003FB654 /* LoginViewController.swift in Sources */,
+				F3D90CD2250FC19F003FB654 /* AppDelegate.swift in Sources */,
+				F3D90CF7250FCFB8003FB654 /* UIColor+NamedColors.swift in Sources */,
+				F3D90D04250FD976003FB654 /* HTTPMethod.swift in Sources */,
+				F3419B7F2510E7F900B29515 /* ProductsInfo.swift in Sources */,
+				F3419B7A2510D3E800B29515 /* ProductTableViewCell.swift in Sources */,
+				F3D90D02250FD925003FB654 /* HTTPHeader.swift in Sources */,
+				F3D90D00250FD90B003FB654 /* UserCredentials.swift in Sources */,
+				F3419B782510C7B700B29515 /* ProductsClient.swift in Sources */,
+				F3419B702510BE4200B29515 /* Authenticator.swift in Sources */,
+				F3D90CFA250FD077003FB654 /* URLEndpoint.swift in Sources */,
+				F3D90D082510AE60003FB654 /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3D90CE0250FC1A3003FB654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D90CE9250FC1A3003FB654 /* MoneyChallengeTests.swift in Sources */,
+				F3419B7C2510E57D00B29515 /* FakeEndpoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3D90CE6250FC1A3003FB654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3D90CCD250FC19F003FB654 /* MoneyChallenge */;
+			targetProxy = F3D90CE5250FC1A3003FB654 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3D90CD7250FC19F003FB654 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3D90CD8250FC19F003FB654 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3D90CDC250FC1A3003FB654 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3D90CDD250FC1A3003FB654 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3D90CEB250FC1A3003FB654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3D90CEC250FC1A3003FB654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3D90CEE250FC1A3003FB654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AFE6D9B33E0BCE261D04F2D /* Pods-MoneyChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SH354U7UN;
+				INFOPLIST_FILE = MoneyChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.0xlopez.MoneyChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F3D90CEF250FC1A3003FB654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C27611EC809B230CB607C7 /* Pods-MoneyChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SH354U7UN;
+				INFOPLIST_FILE = MoneyChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.0xlopez.MoneyChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F3D90CF1250FC1A3003FB654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C5986E179BA5ECB6BC192FC /* Pods-MoneyChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SH354U7UN;
+				INFOPLIST_FILE = MoneyChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.0xlopez.MoneyChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyChallenge.app/MoneyChallenge";
+			};
+			name = Debug;
+		};
+		F3D90CF2250FC1A3003FB654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D4CB47B4E641D1CB3C91B2 /* Pods-MoneyChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SH354U7UN;
+				INFOPLIST_FILE = MoneyChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.0xlopez.MoneyChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyChallenge.app/MoneyChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3D90CC9250FC19F003FB654 /* Build configuration list for PBXProject "MoneyChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3D90CEB250FC1A3003FB654 /* Debug */,
+				F3D90CEC250FC1A3003FB654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3D90CED250FC1A3003FB654 /* Build configuration list for PBXNativeTarget "MoneyChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3D90CEE250FC1A3003FB654 /* Debug */,
+				F3D90CEF250FC1A3003FB654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3D90CF0250FC1A3003FB654 /* Build configuration list for PBXNativeTarget "MoneyChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3D90CF1250FC1A3003FB654 /* Debug */,
+				F3D90CF2250FC1A3003FB654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3D90CC6250FC19F003FB654 /* Project object */;
+}
